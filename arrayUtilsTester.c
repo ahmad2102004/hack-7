@@ -4,8 +4,8 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
-
 #include "array_utils.h"
+
 
 /**
  * Prints the given array to the standard output
