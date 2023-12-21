@@ -123,3 +123,36 @@ int main() {
 
     return 0;
 }
+//question 5
+
+
+
+int main() {
+   
+    int arr[] = {10, 15, 5, 25, 0};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    // Print the original array
+    printf("Original Array: ");
+    for (int i = 0; i < size; ++i) {
+        printf("%d ", arr[i]);
+    }
+
+    // Create a reversed copy of the array
+    int *reversedArr = reverseCopy(arr, size);
+
+    if (reversedArr != NULL) {
+        // Print the reversed array
+        printf("\nReversed Copy: ");
+        for (int i = 0; i < size; ++i) {
+            printf("%d ", reversedArr[i]);
+        }
+
+        // Don't forget to free the allocated memory
+        free(reversedArr);
+    } else {
+        printf("\nMemory allocation failed.\n");
+    }
+
+    return 0;
+}
