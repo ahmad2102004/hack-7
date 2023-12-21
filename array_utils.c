@@ -68,4 +68,33 @@ int main() {
 
     return 0;
 }
+// question 3
 
+int main() {
+   
+    int arr[] = {1, 2, 3, 4, 5};
+    int oldSize = sizeof(arr) / sizeof(arr[0]);
+
+    int newSize = 8;
+
+    // Create a padded copy of the array
+    int *newArr = paddedCopy(arr, oldSize, newSize);
+
+    if (newArr != NULL) {
+        // padded copy
+        printf("Original Array: ");
+            for (int i = 0; i < oldSize; ++i) {
+            printf("%d ", arr[i]);
+        }
+
+        printf("\nNew Padded Array: ");
+        for (int i = 0; i < newSize; ++i) {
+            printf("%d ", newArr[i]);
+        }
+        free(newArr);
+    } else {
+        printf("Memory allocation failed.\n");
+    }
+
+    return 0;
+}
