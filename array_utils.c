@@ -28,3 +28,44 @@ scanf("%d",&x);
 printf("\nResult : %d",contains(arr , size , x));
 
 }
+//question 2
+
+int main() {
+    
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int x = 5;
+    int i = 2;
+    int j = 6;
+
+    // if x is within the range i, j
+    if (containsWithin(arr, size, x, i, j)) {
+        printf("%d is within the range [%d, %d]\n", x, i, j);
+    } else {
+        printf("%d is not within the range [%d, %d]\n", x, i, j);
+    }
+
+    return 0;
+}
+//question 2
+
+int main() {
+    
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    int x = 5;
+    int i = 2;
+    int j = 6;
+
+    // if x is within the range i, j
+    if (containsWithin(arr, size, x, i, j)) {
+        printf("%d is within the range [%d, %d]\n", x, i, j);
+    } else {
+        printf("%d is not within the range [%d, %d]\n", x, i, j);
+    }
+
+    return 0;
+}
+
