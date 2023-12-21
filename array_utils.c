@@ -98,3 +98,28 @@ int main() {
 
     return 0;
 }
+// question 4
+
+
+int main() {
+
+    int arr[] = {10, 15, 5, 25, 0};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    // Print the original array
+    printf("Original Array: ");
+    for (int i = 0; i < size; ++i) {
+        printf("%d ", arr[i]);
+    }
+
+    // Reverse the array
+    reverse(arr, size);
+
+    // Print the reversed array
+    printf("\nReversed Array: ");
+    for (int i = 0; i < size; ++i) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
